@@ -1,6 +1,6 @@
-- name: Hello World Sample
+- name: test
   hosts: all
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+    - name: test ping
+      shell: ping -c 1 -w www.baidu.com
+      ignore_errors: true
