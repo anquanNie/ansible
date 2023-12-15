@@ -1,6 +1,6 @@
----            
-- hosts: all    
-  remote_user: root    
+    - name: Hello World Sample
+  hosts: all
   tasks:
-    - ping:     
-    - setup: "filter=ansible_*_mb"
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
