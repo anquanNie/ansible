@@ -1,6 +1,5 @@
-- hosts: all    
-  remote_user: root    
-  tasks:
-    - ping:     
-    - setup: "filter=ansible_*_mb"
-
+--- 		
+ - hosts: all
+   remote_user: root
+   tasks:
+     - ping:
