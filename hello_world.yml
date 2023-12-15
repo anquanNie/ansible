@@ -3,4 +3,4 @@
   remote_user: root    
   tasks:
     - ping:     
-    - setup: "filter=ansible_*_mb"
+  
