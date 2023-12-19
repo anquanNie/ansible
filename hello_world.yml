@@ -3,6 +3,6 @@
   hosts: all
   tasks:
     - name: ping
-      shell: ping -c 1 -w 114.114.114.114
-      ignore_errors: true
+      ping: 
+        data: crash
    
