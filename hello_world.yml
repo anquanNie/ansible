@@ -1,6 +1,6 @@
 ---
 - name: test ping
-  hosts: all
+  hosts: 172.18.152.95
   tasks:
     - name: ping
       shell: ping -c 1 -w 114.114.114.114
