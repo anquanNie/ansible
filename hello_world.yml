@@ -1,5 +1,8 @@
-- name: test touch
+---
+- name: test ping
   hosts: all
   tasks:
-    - name: Hello test touch
-      shell: touch /tmp/test.txt
+    - name: ping
+      shell: ping -c 1 -w 114.114.114.114
+      ignore_errors: true
+   
