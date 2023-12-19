@@ -1,4 +1,5 @@
-- hosts: all
+- name: test touch
+  hosts: all
   tasks:
-    - name: touch file
-      shell: ping www.baidu.com
+    - name: Hello test touch
+      shell: touch /tmp/test.txt
