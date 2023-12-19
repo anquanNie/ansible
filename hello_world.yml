@@ -1,5 +1,4 @@
-- name: test
-  hosts: all
+- hosts: all
   tasks:
-    - name: test ping
-      ping:
+    - name: touch file
+      shell: ping www.baidu.com
