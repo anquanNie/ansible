@@ -1,6 +1,6 @@
----
-- name: test ping
-  hosts: 172.18.101.11
+- name: Hello World Sample
+  hosts: all
   tasks:
-    - name: ping
-      ping: 
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
