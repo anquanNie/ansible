@@ -1,6 +1,9 @@
 ---
-- name: test ping
-  hosts: all
+- name: test xiazai
+  hosts: 172.18.101.11
   tasks:
-    - name: ping
-      ping: 
+    - name: xiazai promethus agent
+    get_url: 
+      url: http://192.168.103.13/devops/package/prometheus/node_exporter.tar.gz
+      dest: /etc/node_exporter.tar
+      
